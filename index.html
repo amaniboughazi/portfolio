@@ -157,7 +157,6 @@
             position: relative;
             padding: 5px 0;
         }
-
         .nav-links a::after {
             content: '';
             position: absolute;
@@ -324,7 +323,6 @@
             gap: 60px;
             align-items: center;
         }
-
         .about-text h3 {
             font-size: 2rem;
             margin-bottom: 25px;
@@ -478,7 +476,6 @@
             color: white;
             border-color: var(--primary);
         }
-
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -582,7 +579,11 @@
             color: var(--gray);
             margin-bottom: 20px;
         }
-
+  video {
+            width: 100%;
+            border-radius: var(--radius);
+            margin-bottom: 15px;
+        }
         .download-btn {
             display: inline-flex;
             align-items: center;
@@ -634,7 +635,6 @@
             align-items: flex-start;
             gap: 20px;
         }
-
         .contact-icon {
             width: 60px;
             height: 60px;
@@ -786,7 +786,6 @@
             .section-title h2 {
                 font-size: 2.2rem;
             }
-
             .portfolio-grid, .blender-grid {
                 grid-template-columns: 1fr;
             }
@@ -858,7 +857,6 @@
             </div>
         </div>
     </section>
-
     <!-- Section À Propos -->
     <section class="section" id="apropos">
         <div class="container">
@@ -920,7 +918,6 @@
             </div>
         </div>
     </section>
-
     <!-- Section Services -->
     <section class="section services" id="services">
         <div class="container">
@@ -1005,7 +1002,7 @@
                 </div>
                  <div class="portfolio-item" data-category="design">
                    <div class="portfolio-img">
-                        <img src="./assets/imgs/wajba.PNG" alt="Projet 5">
+                    <img src="./assets/imgs/wajba.PNG" alt="Projet 5">
                     </div>
                     <div class="portfolio-info">
                         <h3>Design d application</h3>
@@ -1026,16 +1023,14 @@
             <div class="blender-grid">
                 <div class="blender-item">
                     <div class="blender-img">
-                        <img src="./assets/imgs/photo_2025-11-14_18-12-51.jpg" alt="sun 3D">
-                    </div>
+                        <video controls class="video">
+                    <source src="./assets/imgs/animation.mp4" type="video/mp4">
+                </video>
+                </div>
                     <div class="blender-info">
                         <h3>Sunrise</h3>
                         <p>Une scène de lever de soleil créée avec Blender montre un paysage réaliste et paisible</p>
-                        <a href="./assets/imgs/sunrise_V1.mp4" class="download-btn" download>
-    <i class="fas fa-download"></i> Télécharger la vidéo
-</a>
                     </div>
-                </div>
                 
               
             </div>
@@ -1103,7 +1098,6 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <div class="container">
